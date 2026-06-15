@@ -4,7 +4,7 @@ venv/
 venv311/
 
 # ChromaDB
-data/chroma_db/
+#data/chroma_db/
 
 # Python
 __pycache__/
