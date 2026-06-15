@@ -4,6 +4,13 @@ import streamlit as st
 from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
 load_dotenv()
+import os
+from pathlib import Path
+
+# Build vectorstore if not exists (for Streamlit Cloud)
+if not Path("data/chroma_db").exists():
+    from vectorstore.setup import create_vectorstore
+    create_vectorstore()
 # Page config
 st.set_page_config(
     page_title="HR Policy Assistant",
