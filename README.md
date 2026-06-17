@@ -33,7 +33,7 @@ User Question
 | Component       | Tool                            |
 |----------------|---------------------------------|
 | Agent Framework | LangGraph (StateGraph)          |
-| LLM             | Groq LLaMA 3.3 70B              |
+| LLM             | OpenAI( gpt-4o-mini)              |
 | Vector DB       | ChromaDB (cosine similarity)    |
 | Embeddings      | HuggingFace all-MiniLM-L6-v2   |
 | Web Search      | Tavily Search API               |
